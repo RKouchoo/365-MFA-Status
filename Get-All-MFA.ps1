@@ -1,6 +1,8 @@
 ﻿# If script does not run, use below command
 # Install-Module Microsoft.Graph -Force
 
+Import-Module Microsoft.Graph
+
 # Connect to Microsoft Graph with the required scopes
 Connect-MgGraph -Scopes "User.Read.All", "Policy.ReadWrite.AuthenticationMethod", "UserAuthenticationMethod.Read.All"
 
